@@ -2,7 +2,7 @@ const accId = 11
 let accMail = "ak@gmail.cm"
 var accPass = "aaa123"
 accName = "Akshat"
-let accType = ""
+let accType;
 
 console.log(accName)
 /*
