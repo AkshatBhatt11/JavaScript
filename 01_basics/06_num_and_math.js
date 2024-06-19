@@ -1,8 +1,8 @@
 const score = 11
-console.log(score)
+console.log(score)// output type is number 
 
 const balance = new Number(12.012121)
-console.log(balance)
+console.log(typeof balance)// output type is object if we create number like object
 
 console.log(balance.toString().length)// first convert to string and then it show the length of number
 console.log(balance.toFixed(2))// it only show two digits after decimal
