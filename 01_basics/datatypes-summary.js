@@ -48,3 +48,27 @@ const myFunction = function(){
     console.log("hello world")
 }
 console.log(typeof myFunction);
+
+//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+// Stack (Primitive) and Heap (Non-Primitive)
+
+let myName = "akshatBhatt"
+
+let otherName = myName
+otherName = "helloWorld"
+
+console.log(myName)
+console.log(otherName);
+
+let userOne = {
+    email: "ak@google.com",
+    upi: "user@sbi"
+}
+
+let userTwo = userOne
+
+userTwo.email = "xyz@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
