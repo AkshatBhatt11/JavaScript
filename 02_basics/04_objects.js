@@ -49,3 +49,16 @@ console.log(Object.values(vk)) //to get output of values in array format
 console.log(Object.entries(vk)) //to get output of keys and values in array format
 
 console.log(vk.hasOwnProperty('id')) //it check that keys name id is avalible or not and output in true and false
+
+// Video - 18
+
+const course = {
+    courseName: "english",
+    price: "111",
+    courseMentor: "akshat"
+}
+// course.courseMentor
+const {courseMentor: Men} = course //name courseMentor as Men
+// console.log(course)
+console.log(Men)
+
