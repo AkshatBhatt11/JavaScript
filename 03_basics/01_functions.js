@@ -29,4 +29,31 @@ function loginMessage(username = "vishnu"){
 }
 
 const name = loginMessage("akshat")
-console.log(name)
+// console.log(name)
+
+
+function calCart(...num1) { //Rest operator bundle all items and give output
+    return num1
+}
+// console.log(calCart(2, 4, 6, 8, 10, 12))
+
+const user = {
+    uName: "ak",
+    age: 21
+}
+
+function handObj(anyObj) {
+    console.log(`hello ${anyObj.uName} is ${anyObj.age} years old.`)
+}
+// handObj(user)
+handObj({ //direct object pass to function
+    uName: "vk",
+    age: 24
+})
+
+const myArr = [2, 4, 6, 8, 10] //array pass to function
+function retSecVal(getArr){
+    return getArr
+}
+// console.log(retSecVal(myArr))
+console.log(retSecVal([1, 3, 5, 7, 9]))
