@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Akshat Bhatt learning Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+   
+   let intervalId
+
+   const startInterval = function(){
+        if (!intervalId) {
+            intervalId = setInterval(name, 1000);
+        }
+    
+        function name(){
+            console.log("Akshat", Date.now());
+        }
+    }
+    document.querySelector('#start').addEventListener('click', startInterval)
+
+    const stopInterval = function(){
+        clearInterval(intervalId)
+        intervalId = null; //it is used flush internalId so it cannot used after this scope
+    }
+    document.querySelector('#stop').addEventListener('click', stopInterval)
+ 
+</script>
+</html>
