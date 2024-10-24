@@ -1,0 +1,37 @@
+// ES6
+
+// class User {
+//     constructor(username, email, password) {
+//         this.username = username;
+//         this.email = email;
+//         this.password = password;
+//     }
+//     encryptPassword(){
+//         return `${this.password}xyz`
+//     }
+//     changeUsername(){
+//         return `${this.username.toUpperCase()}`
+//     }
+// }
+
+// const ak = new User("akshat", "xyz@gmail.com", "123")
+// console.log(ak.encryptPassword());
+// console.log(ak.changeUsername());
+
+//behind the scene
+
+function User(username, email, password) {
+    this.username = username;
+    this.email = email;
+    this.password = password;
+}
+
+User.prototype.encryptPassword = function(){
+    return `${this.password}abc`
+}
+User.prototype.changeUsername = function(){
+    return `${this.username.toUpperCase()}`
+}
+const vk = new User("mayank", "abc@gmail.com", "321")
+console.log(vk.encryptPassword());
+console.log(vk.changeUsername());
